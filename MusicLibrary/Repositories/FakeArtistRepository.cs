@@ -15,7 +15,7 @@ namespace MusicLibrary.Repositories
 
         IEnumerable<Artist> IRepository<Artist>.GetAll()
         {
-            throw new NotImplementedException();
+            return artists;
         }
     }
 }

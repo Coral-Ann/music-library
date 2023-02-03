@@ -3,7 +3,7 @@ using MusicLibrary.Models;
 
 namespace MusicLibrary.Repositories
 {
-	public class FakeAlbumRepository
+	public class FakeAlbumRepository : IRepository<Album>
 	{
 		List<Album> albums = new List<Album>
 		{
@@ -15,9 +15,10 @@ namespace MusicLibrary.Repositories
 
         };
 
-		public FakeAlbumRepository()
-		{
-		}
-	}
+        IEnumerable<Album> IRepository<Album>.GetAll()
+        {
+            return albums;
+        }
+    }
 }
 

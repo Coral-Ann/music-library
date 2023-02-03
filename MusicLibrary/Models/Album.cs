@@ -7,4 +7,3 @@ namespace MusicLibrary.Models
 		public Artist? Artist { get; set; }
 	}
 }
-

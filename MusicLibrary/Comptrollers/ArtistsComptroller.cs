@@ -21,7 +21,7 @@ namespace MusicLibrary.Comptrollers
 
         public void DisplayAllArtists()
         {
-            Console.WriteLine(string.Join(", ", repo.GetAll().Select(artist => artist.Name)));
+            Console.WriteLine(string.Join(", ", repo.GetAll().Select(artist => artist.Name)) + "\n");
         }
 	}
 }
